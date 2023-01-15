@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Database</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h1>Winz Movies</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control keyword"
+              placeholder="Search Movie...."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row m-auto text-center mt-5" id="main"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="Modals"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="" alt="" class="imd-fluid" />
+                </div>
+                <div class="col-md-9">
+                  <ul class="list-group">
+                    <li class="list-group-item"><b></b></li>
+                    <li class="list-group-item">Director :</li>
+                    <li class="list-group-item">Actors :</li>
+                    <li class="list-group-item">Writter :</li>
+                    <li class="list-group-item">Plot : <br /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
